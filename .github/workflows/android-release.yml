@@ -48,7 +48,9 @@ jobs:
           sed -i "s/versionName \".*\"/versionName \"${VERSION}\"/; s/versionCode 1/versionCode ${GITHUB_RUN_NUMBER}/" android/app/build.gradle
       - name: "Build release APK"
         working-directory: frontend/android
-        run: ./gradlew assembleRelease
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleRelease
       - name: "Sign APK"
         env:
           KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
