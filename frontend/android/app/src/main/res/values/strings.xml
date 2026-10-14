@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">OWASP Juice Shop</string>
+    <string name="title_activity_main">OWASP Juice Shop</string>
+    <string name="package_name">org.owasp.juiceshop</string>
+    <string name="custom_url_scheme">org.owasp.juiceshop</string>
+</resources>

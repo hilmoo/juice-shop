@@ -78,7 +78,18 @@
               "extractLicenses": true,
               "statsJson": true
             },
-            "development": {}
+            "development": {},
+            "android": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.android.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "media",
+              "sourceMap": false
+            }
           },
           "defaultConfiguration": ""
         },
